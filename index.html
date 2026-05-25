@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atalanta - Estrategia de Crecimiento | Copy Estratega</title>
+  <meta property="og:title" content="Atalanta - Estrategia de Crecimiento Personalizada">
+  <meta property="og:description" content="Una auditoría y estrategia de crecimiento construida específicamente para Atalanta por Copy Estratega.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://danigdecelis.github.io/factor-rh-strategy/logo-ca.png">
+  <meta property="og:url" content="https://danigdecelis.github.io/atalanta-strategy/">
+  <link rel="icon" type="image/png" href="https://storage.googleapis.com/gpt-engineer-file-uploads/ENnY1cQr8yb82cqirDaLRejSItf1/uploads/1759866240739-LeadLinker%20Logo%20Favicon%20.png">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --gold: #C9A84C;
+      --gold-dark: #A8893A;
+      --gold-light: rgba(201, 168, 76, 0.08);
+      --gold-border: rgba(201, 168, 76, 0.2);
+      --dark: #0A0A0A;
+      --dark-mid: #1A1A1A;
+      --body-text: #555555;
+      --muted: #999999;
+      --off-white: #F8F6F0;
+      --white: #FFFFFF;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      line-height: 1.75;
+      color: var(--dark-mid);
+      background: var(--white);
+      overflow-x: hidden;
+    }
+
+    /* NAV */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: rgba(10,10,10,0.97);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(201,168,76,0.15);
+      padding: 0 40px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-logo img { height: 48px; width: auto; }
+    .nav-cta {
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      background: transparent;
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 8px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .nav-cta:hover { background: var(--gold); color: var(--dark); }
+
+    /* SECTIONS */
+    .section { padding: 80px 40px; border-bottom: 1px solid rgba(0,0,0,0.05); }
+    .section.dark { background: var(--dark); border-bottom: 1px solid rgba(255,255,255,0.06); }
+    .section.off-white { background: var(--off-white); }
+    .section.white { background: var(--white); }
+    .container { max-width: 800px; margin: 0 auto; }
+
+    /* LABELS */
+    .label {
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 16px;
+    }
+
+    /* HEADINGS */
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(32px, 5vw, 52px);
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      line-height: 1.1;
+    }
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(26px, 4vw, 38px);
+      font-weight: 700;
+      letter-spacing: -0.3px;
+      line-height: 1.2;
+    }
+    h3 {
+      font-family: 'Inter', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    /* HERO (CARD 1) */
+    .hero {
+      padding: 120px 40px 80px;
+      background: var(--dark);
+      text-align: center;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .hero h1 { color: var(--white); margin-bottom: 32px; }
+    .hero-video {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(201,168,76,0.15);
+      border-radius: 10px;
+      padding: 40px;
+      margin: 32px auto;
+      max-width: 640px;
+      color: rgba(255,255,255,0.3);
+      font-size: 14px;
+    }
+    .hero-alert {
+      background: var(--gold);
+      color: var(--dark);
+      font-size: 18px;
+      font-weight: 700;
+      padding: 18px 40px;
+      border-radius: 4px;
+      display: inline-block;
+      margin-top: 16px;
+    }
+
+    /* CARD 2: INTRO */
+    .intro-text {
+      font-size: 20px;
+      line-height: 1.7;
+      color: var(--body-text);
+      text-align: center;
+    }
+    .intro-text strong { color: var(--dark-mid); }
+
+    /* CARD 3: WHAT'S INSIDE */
+    .toc-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-top: 32px;
+    }
+    .toc-item {
+      background: var(--white);
+      border: 1px solid rgba(0,0,0,0.08);
+      border-radius: 6px;
+      padding: 20px 24px;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+    .toc-num {
+      font-family: 'Inter', sans-serif;
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--gold);
+      line-height: 1;
+      min-width: 36px;
+    }
+    .toc-content h4 {
+      font-weight: 700;
+      font-size: 15px;
+      margin-bottom: 4px;
+      color: var(--dark-mid);
+    }
+    .toc-content p { font-size: 13px; color: var(--muted); line-height: 1.5; }
+
+    /* CARD 4: AUDIT INTRO */
+    .audit-intro {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+    }
+    .audit-intro p { color: var(--body-text); margin-bottom: 16px; }
+
+    /* FINDING CARDS */
+    .findings { margin-top: 24px; display: flex; flex-direction: column; gap: 16px; }
+    .finding-card {
+      background: var(--off-white);
+      border: 1px solid rgba(0,0,0,0.06);
+      border-left: 3px solid var(--gold);
+      border-radius: 10px;
+      padding: 20px 24px;
+    }
+    .finding-card h4 {
+      font-weight: 700;
+      font-size: 15px;
+      color: var(--dark-mid);
+      margin-bottom: 6px;
+    }
+    .finding-card p { font-size: 14px; line-height: 1.6; color: var(--body-text); }
+
+    /* DARK finding cards */
+    .finding-card.dark-card {
+      background: rgba(255,255,255,0.04);
+      border-left: 3px solid var(--gold);
+      border-color: rgba(255,255,255,0.06);
+    }
+    .finding-card.dark-card h4 { color: var(--white); }
+    .finding-card.dark-card p { color: rgba(255,255,255,0.6); }
+
+    .url-tag {
+      display: inline-block;
+      background: var(--gold-light);
+      border: 1px solid var(--gold-border);
+      color: var(--gold);
+      font-size: 12px;
+      font-family: 'Inter', monospace;
+      padding: 4px 12px;
+      border-radius: 4px;
+      margin-bottom: 20px;
+      text-decoration: none;
+      word-break: break-all;
+    }
+
+    /* TRANSITION DIVIDER (CARD 8) */
+    .transition {
+      text-align: center;
+      padding: 80px 40px;
+      background: var(--dark);
+    }
+    .transition .label { justify-content: center; }
+    .transition h2 { color: var(--white); margin-top: 12px; }
+    .transition p { color: rgba(255,255,255,0.6); margin-top: 16px; font-size: 17px; max-width: 560px; margin-left: auto; margin-right: auto; }
+
+    /* PROBLEM SECTIONS */
+    .problem-body { color: var(--body-text); margin-bottom: 32px; font-size: 16px; }
+    .journey {
+      margin-top: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      position: relative;
+    }
+    .journey::before {
+      content: '';
+      position: absolute;
+      left: 19px;
+      top: 32px;
+      bottom: 32px;
+      width: 2px;
+      background: var(--gold-border);
+    }
+    .journey-step {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      padding: 16px 0;
+    }
+    .journey-circle {
+      width: 40px;
+      height: 40px;
+      min-width: 40px;
+      border: 2px solid var(--gold);
+      border-radius: 50%;
+      background: var(--dark-mid);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Inter', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--gold);
+      position: relative;
+      z-index: 1;
+    }
+    .journey-text h4 { font-weight: 700; font-size: 15px; color: var(--dark-mid); margin-bottom: 4px; }
+    .journey-text p { font-size: 14px; color: var(--body-text); }
+    .problem-closing {
+      margin-top: 28px;
+      font-style: italic;
+      color: var(--dark-mid);
+      font-size: 16px;
+      font-weight: 600;
+      border-left: 3px solid var(--gold);
+      padding-left: 20px;
+    }
+
+    .support-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin: 28px 0;
+    }
+    .support-item {
+      background: var(--off-white);
+      border-radius: 10px;
+      padding: 24px 20px;
+      border: 1px solid rgba(0,0,0,0.05);
+    }
+    .support-item h4 { font-weight: 700; font-size: 15px; color: var(--dark-mid); margin-bottom: 8px; }
+    .support-item p { font-size: 13px; color: var(--body-text); line-height: 1.6; }
+
+    /* STATS (CARD 12) */
+    .stats-section {
+      background: var(--dark);
+      padding: 80px 40px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .stats-intro { color: rgba(255,255,255,0.7); margin-bottom: 48px; font-size: 16px; }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px;
+      margin-bottom: 48px;
+    }
+    .stat-block {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 10px;
+      padding: 32px 28px;
+    }
+    .stat-number {
+      font-family: 'Playfair Display', serif;
+      font-size: 56px;
+      font-weight: 800;
+      color: var(--gold);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .stat-label {
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .stat-desc { font-size: 13px; color: rgba(255,255,255,0.5); line-height: 1.6; }
+    .stats-closing {
+      font-style: italic;
+      color: rgba(255,255,255,0.6);
+      font-size: 16px;
+      border-left: 3px solid var(--gold);
+      padding-left: 20px;
+    }
+
+    /* LEAD MAGNETS (CARD 13) */
+    .lm-list { display: flex; flex-direction: column; gap: 20px; margin-top: 28px; }
+    .lm-item {
+      border: 1px solid rgba(0,0,0,0.07);
+      border-radius: 10px;
+      padding: 24px 28px;
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+    }
+    .lm-item.featured {
+      background: var(--gold-light);
+      border-color: var(--gold-border);
+    }
+    .lm-num {
+      font-family: 'Inter', sans-serif;
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--gold);
+      min-width: 32px;
+      line-height: 1;
+    }
+    .lm-item.featured .lm-badge {
+      background: var(--gold);
+      color: var(--dark);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 4px;
+      margin-bottom: 8px;
+      display: inline-block;
+    }
+    .lm-item h4 { font-weight: 700; font-size: 15px; color: var(--dark-mid); margin-bottom: 6px; }
+    .lm-item p { font-size: 14px; color: var(--body-text); line-height: 1.6; }
+
+    /* EXAMPLE PAGE PREVIEW (CARD 14) */
+    .preview-wrap {
+      border: 1px solid rgba(0,0,0,0.1);
+      border-radius: 10px;
+      overflow: hidden;
+      margin-top: 28px;
+      cursor: pointer;
+      transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+      text-decoration: none;
+      display: block;
+    }
+    .preview-wrap:hover {
+      border-color: var(--gold);
+      box-shadow: 0 8px 32px rgba(201,168,76,0.15);
+      transform: translateY(-4px);
+    }
+    .preview-hero {
+      background: #111111;
+      padding: 36px 32px;
+      min-height: 220px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .preview-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 50% 60% at 70% 40%, rgba(220,6,48,0.15) 0%, transparent 70%);
+    }
+    .preview-badge {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #dc0630;
+      margin-bottom: 12px;
+      position: relative;
+      z-index: 1;
+    }
+    .preview-headline {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 18px;
+      font-weight: 900;
+      color: #ffffff;
+      text-transform: uppercase;
+      line-height: 1.2;
+      margin-bottom: 16px;
+      position: relative;
+      z-index: 1;
+    }
+    .preview-headline span { color: #dc0630; }
+    .preview-stats {
+      display: flex;
+      gap: 24px;
+      position: relative;
+      z-index: 1;
+    }
+    .preview-stat { text-align: center; }
+    .preview-stat-num {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 22px;
+      font-weight: 900;
+      color: #dc0630;
+      line-height: 1;
+    }
+    .preview-stat-label { font-size: 10px; color: rgba(255,255,255,0.5); margin-top: 3px; }
+    .preview-bar {
+      background: var(--off-white);
+      padding: 16px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .preview-url { font-size: 12px; color: var(--muted); font-family: monospace; }
+    .preview-cta { font-size: 13px; font-weight: 600; color: var(--gold); display: flex; align-items: center; gap: 6px; }
+
+    /* WHAT ELSE (CARD 15) */
+    .build-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 32px; }
+    .build-col h3 { font-size: 16px; font-weight: 700; color: var(--dark-mid); margin-bottom: 16px; }
+    .build-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .build-col ul li {
+      font-size: 14px;
+      color: var(--body-text);
+      padding-left: 16px;
+      position: relative;
+      line-height: 1.5;
+    }
+    .build-col ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 8px;
+      width: 5px;
+      height: 5px;
+      background: var(--gold);
+      border-radius: 50%;
+    }
+    .email-list { display: flex; flex-direction: column; gap: 10px; margin-top: 8px; }
+    .email-item {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      font-size: 13px;
+      color: var(--body-text);
+    }
+    .email-num {
+      min-width: 22px;
+      height: 22px;
+      background: var(--gold-light);
+      border: 1px solid var(--gold-border);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--gold);
+    }
+
+    /* GUARANTEE (CARD 16) */
+    .guarantee-box {
+      background: var(--gold-light);
+      border: 1px solid var(--gold-border);
+      border-radius: 10px;
+      padding: 28px 32px;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    .guarantee-box p {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(18px, 2.5vw, 24px);
+      font-weight: 700;
+      color: var(--dark-mid);
+      line-height: 1.5;
+    }
+    .guarantee-steps { display: flex; flex-direction: column; gap: 0; }
+    .g-step {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      padding: 20px 0;
+      border-bottom: 1px solid rgba(201,168,76,0.1);
+    }
+    .g-step:last-child { border-bottom: none; }
+    .g-num {
+      min-width: 44px;
+      height: 44px;
+      border: 2px solid var(--gold);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--gold);
+    }
+    .g-step.theirs .g-num { background: var(--gold); color: var(--dark); }
+    .g-content h4 { font-weight: 700; font-size: 15px; color: var(--dark-mid); margin-bottom: 4px; }
+    .g-content p { font-size: 14px; color: var(--body-text); }
+
+    /* CTA (CARDS 17 + 20) */
+    .cta-section {
+      background: var(--dark);
+      padding: 80px 40px;
+      text-align: center;
+      border-top: 1px solid rgba(201,168,76,0.3);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .cta-section h2 { color: var(--white); margin-bottom: 12px; }
+    .cta-section > .container > p { color: rgba(255,255,255,0.6); margin-bottom: 40px; font-size: 17px; }
+    .cta-email {
+      font-size: 17px;
+      color: rgba(255,255,255,0.7);
+      margin-bottom: 24px;
+    }
+    .cta-or {
+      font-size: 12px;
+      letter-spacing: 3px;
+      color: rgba(255,255,255,0.25);
+      margin: 24px 0;
+      text-transform: uppercase;
+    }
+    .btn-calendly {
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      background: transparent;
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+      padding: 14px 36px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+    }
+    .btn-calendly:hover { background: var(--gold); color: var(--dark); }
+
+    /* FAQS */
+    .faq-list { display: flex; flex-direction: column; gap: 16px; margin-top: 28px; }
+    .faq-item {
+      background: var(--off-white);
+      border: 1px solid rgba(0,0,0,0.06);
+      border-radius: 10px;
+      padding: 24px 28px;
+    }
+    .faq-item h4 { font-weight: 700; font-size: 15px; color: var(--dark-mid); margin-bottom: 8px; }
+    .faq-item p { font-size: 14px; color: var(--body-text); line-height: 1.65; }
+
+    /* ABOUT (CARD 19) */
+    .about-card {
+      background: var(--off-white);
+      border: 1px solid rgba(0,0,0,0.06);
+      border-radius: 10px;
+      padding: 36px 32px;
+      display: flex;
+      gap: 28px;
+      align-items: flex-start;
+    }
+    .about-photo {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--gold);
+      flex-shrink: 0;
+    }
+    .about-name { font-weight: 800; font-size: 18px; color: var(--dark-mid); margin-bottom: 2px; }
+    .about-title { font-size: 14px; color: var(--muted); margin-bottom: 16px; }
+    .about-bio { font-size: 14px; color: var(--body-text); line-height: 1.7; }
+
+    /* FOOTER */
+    footer {
+      background: var(--dark);
+      border-top: 1px solid rgba(201,168,76,0.15);
+      padding: 32px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    footer img { height: 36px; width: auto; }
+    footer p { font-size: 13px; color: rgba(255,255,255,0.4); }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      nav { padding: 0 20px; }
+      .section { padding: 60px 20px; }
+      .hero { padding: 100px 20px 60px; }
+      .stats-section, .transition, .cta-section { padding: 60px 20px; }
+      .audit-intro { grid-template-columns: 1fr; gap: 28px; }
+      .support-grid { grid-template-columns: 1fr; }
+      .build-grid { grid-template-columns: 1fr; }
+      .stats-grid { grid-template-columns: 1fr; gap: 20px; }
+      .toc-grid { grid-template-columns: 1fr; }
+      footer { flex-direction: column; align-items: flex-start; padding: 28px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#"><img src="https://danigdecelis.github.io/factor-rh-strategy/logo-ca.png" alt="Copy Estratega"></a>
+    <button class="nav-cta" onclick="Calendly.initPopupWidget({url:'https://calendly.com/danigdecelis/meeting'});return false;">Reservar Llamada</button>
+  </nav>
+
+  <!-- CARD 1: HERO -->
+  <section class="hero">
+    <div class="container">
+      <p class="label">Estrategia de Crecimiento Personalizada</p>
+      <h1>Atalanta</h1>
+      <div class="hero-video">
+        <p>[VIDEO EMBED]</p>
+        <p style="margin-top:8px;font-size:12px;">Pega aqui el link de Loom o Google Drive</p>
+      </div>
+      <div class="hero-alert">🚨 No te saltes el video de arriba 🚨</div>
+    </div>
+  </section>
+
+  <!-- CARD 2: INTRO -->
+  <section class="section white">
+    <div class="container">
+      <p class="intro-text">Este documento fue construido <strong>específicamente para Atalanta</strong>. Cada hallazgo, cada recomendación y cada ejemplo se basa en vuestra web real, vuestra presencia en LinkedIn y vuestro funnel actual.</p>
+    </div>
+  </section>
+
+  <!-- CARD 3: WHAT'S INSIDE -->
+  <section class="section off-white">
+    <div class="container">
+      <p class="label">Contenido</p>
+      <h2>Lo Que Encontrarás Aquí</h2>
+      <div class="toc-grid">
+        <div class="toc-item">
+          <div class="toc-num">01</div>
+          <div class="toc-content"><h4>La Auditoría</h4><p>Lo que encontramos en tu LinkedIn, web y estado publicitario</p></div>
+        </div>
+        <div class="toc-item">
+          <div class="toc-num">02</div>
+          <div class="toc-content"><h4>Los Problemas</h4><p>Qué os está costando leads ahora mismo</p></div>
+        </div>
+        <div class="toc-item">
+          <div class="toc-num">03</div>
+          <div class="toc-content"><h4>Los Números</h4><p>Cuánto cuesta cada mes esa fuga</p></div>
+        </div>
+        <div class="toc-item">
+          <div class="toc-num">04</div>
+          <div class="toc-content"><h4>Lead Magnets Sugeridos</h4><p>Ideas concretas para capturar emails y construir vuestro pipeline</p></div>
+        </div>
+        <div class="toc-item">
+          <div class="toc-num">05</div>
+          <div class="toc-content"><h4>La Página de Ejemplo</h4><p>Una versión reconstruida de vuestra captación, ya lista para vosotros</p></div>
+        </div>
+        <div class="toc-item">
+          <div class="toc-num">06</div>
+          <div class="toc-content"><h4>Qué Más Construiríamos</h4><p>El funnel completo detrás de la página</p></div>
+        </div>
+        <div class="toc-item" style="grid-column: span 2;">
+          <div class="toc-num">07</div>
+          <div class="toc-content"><h4>Nuestra Propuesta y Garantía</h4><p>Cómo garantizamos resultados</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARD 4: AUDIT INTRO -->
+  <section class="section white">
+    <div class="container">
+      <p class="label">La Auditoría</p>
+      <h2>Hola Eduardo, soy Daniel</h2>
+      <br>
+      <div class="audit-intro">
+        <div>
+          <h3 style="margin-bottom:12px;">Quiénes Somos</h3>
+          <p style="color:var(--body-text)">Soy el fundador de Copy Estratega. Trabajamos con consultoras y empresas de servicios B2B que ya tienen la metodología, los resultados y la autoridad, pero todavía no tienen el sistema digital que convierte eso en clientes nuevos de forma predecible.</p>
+        </div>
+        <div>
+          <h3 style="margin-bottom:12px;">Cómo os Encontré</h3>
+          <p style="color:var(--body-text)">Encontré a Atalanta en LinkedIn y revisé en detalle vuestra web. Después de analizar vuestra presencia digital encontré varias cosas que vale la pena compartir contigo, Eduardo, como responsable de la estrategia digital de la empresa.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARD 5: LINKEDIN -->
+  <section class="section off-white">
+    <div class="container">
+      <p class="label">Paso 1</p>
+      <h2>Tu LinkedIn</h2>
+      <a href="https://www.linkedin.com/in/eduardosugranes/" class="url-tag" target="_blank">linkedin.com/in/eduardosugranes</a>
+      <p style="color:var(--body-text);margin-bottom:20px;">Lo que encontré:</p>
+      <div class="findings">
+        <div class="finding-card">
+          <h4>Perfil Activo con Enfoque Técnico Diferenciador</h4>
+          <p>Publicas contenido sobre IA y ciberseguridad con regularidad, incluyendo análisis prácticos de herramientas como Google Gemini aplicadas a seguridad ofensiva y defensiva. Es el perfil de un experto con criterio, no de un comercial.</p>
+        </div>
+        <div class="finding-card">
+          <h4>Cátedra UAH-Atalanta como Señal de Autoridad Real</h4>
+          <p>La colaboración con la Universidad de Alcalá aparece en tu actividad y tiene página propia en LinkedIn. Ese activo posiciona a Atalanta ante el sector corporativo y el sector público de una forma que los competidores generalistas no pueden replicar.</p>
+        </div>
+        <div class="finding-card">
+          <h4>Empresa Atalanta con Presencia Activa en el Nicho</h4>
+          <p>La página de empresa publica con regularidad sobre OffSec, eventos de ciberseguridad y logros del equipo. La marca tiene visibilidad en los foros correctos y ante la audiencia correcta.</p>
+        </div>
+        <div class="finding-card">
+          <h4>Ranking Técnico Global Infrautilizado como Activo Comercial</h4>
+          <p>El Top 10 mundial en HackTheBox y TryHackMe se menciona en la web pero no se capitaliza en LinkedIn como señal de autoridad ante compradores B2B: CISOs, CTOs y comités de dirección que toman decisiones de seis cifras.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARD 6: WEBSITE -->
+  <section class="section white">
+    <div class="container">
+      <p class="label">Paso 2</p>
+      <h2>Vuestra Web</h2>
+      <a href="https://atalantago.com/" class="url-tag" target="_blank">atalantago.com</a>
+      <p style="color:var(--body-text);margin-bottom:20px;">Lo que está funcionando:</p>
+      <div class="findings">
+        <div class="finding-card">
+          <h4>Posicionamiento de Nicho Muy Definido</h4>
+          <p>"Ciberseguridad de Élite para organizaciones que no pueden permitirse fallar" es un posicionamiento claro, creíble y diferenciador frente a las grandes consultoras generalistas. El mensaje llega.</p>
+        </div>
+        <div class="finding-card">
+          <h4>Stack de Partners de Primer Nivel</h4>
+          <p>AWS, Azure, Microsoft, CrowdStrike, OffSec, Fortinet, Cloudflare, SentinelOne. Esa lista de partners legitima a Atalanta ante cualquier CISO que llega por primera vez. Pocos competidores de vuestro tamaño la tienen.</p>
+        </div>
+        <div class="finding-card">
+          <h4>Estructura de Servicios Clara y Bien Articulada</h4>
+          <p>Los tres pilares (Ciberseguridad, Digital e IA, Formación) están bien definidos. El visitante entiende qué hace Atalanta sin necesidad de leer texto adicional.</p>
+        </div>
+        <div class="finding-card">
+          <h4>Blog Técnico con Contenido de Alta Intención</h4>
+          <p>12+ posts técnicos en categorías como Ingeniería Social, DevSecOps y Hacking. Es contenido que atrae exactamente a los perfiles que podrían convertirse en clientes. Eso es valioso.</p>
+        </div>
+        <div class="finding-card">
+          <h4>Presencia LATAM como Diferenciador de Escala</h4>
+          <p>La oficina en Asunción, Paraguay, junto con la cobertura en Europa y América Latina, es un activo de escala que muy pocos competidores de vuestro tamaño pueden mostrar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARD 7: ADS + TECH -->
+  <section class="section off-white">
+    <div class="container">
+      <p class="label">Paso 3</p>
+      <h2>Publicidad y Tecnología</h2>
+      <a href="https://adstransparency.google.com/?domain=atalantago.com" class="url-tag" target="_blank">adstransparency.google.com</a>
+      <div class="findings">
+        <div class="finding-card">
+          <h4>Sin Actividad Publicitaria</h4>
+          <p>0 anuncios activos en Google Ads en ningún formato ni periodo. No hay presencia pagada.</p>
+        </div>
+        <div class="finding-card">
+          <h4>Sin Pixels de Seguimiento</h4>
+          <p>No se detectaron pixels de Facebook, Google Ads, LinkedIn Insight Tag, Microsoft Clarity ni Hotjar en el código de la web. No existen datos de comportamiento de visitantes.</p>
+        </div>
+        <div class="finding-card">
+          <h4>Sin Plataforma de Email Detectada</h4>
+          <p>No se identifica Mailchimp, HubSpot, ActiveCampaign, Klaviyo ni ninguna herramienta de email marketing en la fuente de la página.</p>
+        </div>
+        <div class="finding-card">
+          <h4>CMS WordPress con Capacidad de Mejora</h4>
+          <p>La web está construida sobre WordPress. Facilita la instalación de herramientas de captación, pixels y formularios gateados sin desarrollo adicional.</p>
+        </div>
+        <div class="finding-card">
+          <h4>Una Sola Conversión Disponible</h4>
+          <p>El único camino de contacto es el formulario de diagnóstico de seguridad. No hay alternativa intermedia para visitantes que no están listos para ese compromiso.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARD 8: TRANSITION -->
+  <section class="transition">
+    <div class="container">
+      <p class="label">Auditoría Completada</p>
+      <h2 style="color:var(--white);">Los Problemas</h2>
+      <p>Ahora que sabemos lo que hay, aquí está lo que esos hallazgos revelan sobre lo que os está costando leads ahora mismo.</p>
+    </div>
+  </section>
+
+  <!-- CARD 9: PROBLEM 1 -->
+  <section class="section white">
+    <div class="container">
+      <p class="label">Problema 1</p>
+      <h2>El CISO os Busca y se Va Sin Dejar Rastro</h2>
+      <br>
+      <p class="problem-body">Un CISO con una auditoría regulatoria próxima (DORA, NIS2, ISO 27001, ENS) busca referencias técnicas en Google antes de hablar con ningún proveedor. Atalanta tiene el blog, tiene los posts, tiene la autoridad técnica para aparecer en esa búsqueda. Pero cuando ese CISO llega a vuestra web, solo tiene una opción: pedir un diagnóstico completo ahora mismo. Si no está listo para ese compromiso, no hay paso intermedio. Se va. Para siempre.</p>
+      <p style="font-weight:600;color:var(--dark-mid);margin-bottom:20px;">Así se ve el recorrido del comprador hoy:</p>
+      <div class="journey">
+        <div class="journey-step">
+          <div class="journey-circle">1</div>
+          <div class="journey-text">
+            <h4>Búsqueda de Intención Alta</h4>
+            <p>El CISO busca "checklist auditoría ISO 27001 España" o "controles NIS2 infraestructura crítica". Atalanta puede aparecer en esa búsqueda.</p>
+          </div>
+        </div>
+        <div class="journey-step">
+          <div class="journey-circle">2</div>
+          <div class="journey-text">
+            <h4>Llega al Blog, Valida la Autoridad</h4>
+            <p>Lee un post técnico, confirma que Atalanta sabe de lo que habla. La confianza está ahí.</p>
+          </div>
+        </div>
+        <div class="journey-step">
+          <div class="journey-circle">3</div>
+          <div class="journey-text">
+            <h4>Solo un CTA: Pedir el Diagnóstico Completo</h4>
+            <p>No hay descarga, no hay checklist, no hay guía. Solo el formulario de diagnóstico. Si no está listo para ese compromiso, no hay siguiente paso.</p>
+          </div>
+        </div>
+        <div class="journey-step">
+          <div class="journey-circle" style="border-color:rgba(255,255,255,0.2);color:rgba(255,255,255,0.3);background:#333;">4</div>
+          <div class="journey-text">
+            <h4>Se Va. Ningún Seguimiento Posible.</h4>
+            <p>Sin email capturado, sin pixel instalado, sin ningún mecanismo de retención. Ese visitante desaparece y no hay forma de recuperarlo.</p>
+          </div>
+        </div>
+      </div>
+      <p class="problem-closing">Atalanta aparece en el momento de máxima intención de compra y no captura nada de ese tráfico.</p>
+    </div>
+  </section>
+
+  <!-- CARD 10: PROBLEM 2 -->
+  <section class="section off-white">
+    <div class="container">
+      <p class="label">Problema 2</p>
+      <h2>Autoridad Técnica de Primer Nivel sin Sistema de Distribución</h2>
+      <br>
+      <p class="problem-body">Atalanta tiene credenciales que la mayoría de competidores no puede igualar: Top 10 mundial en HackTheBox y TryHackMe, partner oficial OffSec en España, cátedra en la Universidad de Alcalá, 70+ organizaciones como clientes, 50+ expertos certificados. Pero ninguno de esos activos construye una lista de contactos. No existe un mecanismo que convierta esa reputación en pipeline.</p>
+      <div class="support-grid">
+        <div class="support-item">
+          <h4>Credenciales que Generan Confianza pero no Leads</h4>
+          <p>Los logos de partners (CrowdStrike, Fortinet, SentinelOne, AWS) están en el footer. La cátedra UAH-Atalanta tiene su propia página de LinkedIn. Nada de eso está gateado ni conectado a ningún flujo de captura de email.</p>
+        </div>
+        <div class="support-item">
+          <h4>Top 10 Global sin Email List</h4>
+          <p>Ese ranking en HackTheBox es extraordinariamente diferenciador ante compradores técnicos. No existe ningún activo descargable que use ese dato como gancho para capturar contactos cualificados.</p>
+        </div>
+        <div class="support-item">
+          <h4>Cátedra Universitaria sin Página de Captación</h4>
+          <p>La colaboración con la UAH legitima a Atalanta ante corporates y sector público. Podría ser el centro de un lead magnet dirigido exactamente a ese segmento. Hoy no hay nada construido.</p>
+        </div>
+      </div>
+      <p class="problem-closing">Toda esa autoridad existe. Solo le falta el sistema que la convierte en oportunidades de negocio.</p>
+    </div>
+  </section>
+
+  <!-- CARD 11: PROBLEM 3 -->
+  <section class="section white">
+    <div class="container">
+      <p class="label">Problema 3</p>
+      <h2>Sin Datos, sin Retargeting, sin Posibilidad de Optimizar</h2>
+      <br>
+      <a href="https://atalantago.com/noticias/" class="url-tag" target="_blank">atalantago.com/noticias/</a>
+      <p class="problem-body">El blog de Atalanta atrae tráfico de profesionales de seguridad con alta intención de compra. Esos visitantes llegan, leen, y se van. Sin un pixel instalado, no hay forma de saber quién vino, no hay posibilidad de hacer remarketing en LinkedIn o Google a esos perfiles, y no hay datos con los que optimizar nada. El 97% de ese tráfico se evapora sin dejar rastro.</p>
+      <p style="font-weight:600;color:var(--dark-mid);margin-bottom:16px;">Lo que debería haber:</p>
+      <div class="findings">
+        <div class="finding-card">
+          <h4>LinkedIn Insight Tag</h4>
+          <p>Crear audiencias de remarketing con CISOs y CTOs que ya visitaron la web. Cero coste de implementación, impacto directo en la eficiencia de cualquier campaña futura.</p>
+        </div>
+        <div class="finding-card">
+          <h4>GA4 con Eventos de Conversión</h4>
+          <p>Descargas, scroll depth en el blog, tiempo en páginas de servicios. Sin datos no hay decisiones. Sin decisiones no hay optimización.</p>
+        </div>
+        <div class="finding-card">
+          <h4>Microsoft Clarity</h4>
+          <p>Mapas de calor y grabaciones de sesión en las páginas clave del funnel. Permite ver exactamente dónde se pierden los visitantes.</p>
+        </div>
+      </div>
+      <p class="problem-closing">Sin datos no hay decisiones. Sin pixels no hay retargeting. Sin retargeting, cada euro de tráfico orgánico que ya llega se pierde sin dejar huella.</p>
+    </div>
+  </section>
+
+  <!-- CARD 12: NUMBERS -->
+  <section class="stats-section">
+    <div class="container">
+      <p class="label">Los Números</p>
+      <h2 style="color:var(--white);margin-bottom:16px;">Lo Que Cuesta No Tener Sistema</h2>
+      <p class="stats-intro">Con tickets medios de €25.000 a €150.000, incluso mejoras pequeñas tienen un impacto material en la facturación. Todos los supuestos están basados en benchmarks conservadores del sector B2B de servicios técnicos.</p>
+      <div class="stats-grid">
+        <div class="stat-block">
+          <div class="stat-number">70%</div>
+          <div class="stat-label">Compradores B2B consumen contenido educativo antes de contactar</div>
+          <div class="stat-desc">Atalanta tiene ese contenido en el blog. Sin email gate, esa intención de compra pasa por delante sin dejar datos de contacto.</div>
+        </div>
+        <div class="stat-block">
+          <div class="stat-number">€0</div>
+          <div class="stat-label">Valor extraído por cada visita al blog que no convierte</div>
+          <div class="stat-desc">Sin pixel, sin lead magnet y sin retargeting, cada sesión en el blog es tráfico que se evapora sin ninguna posibilidad de seguimiento.</div>
+        </div>
+        <div class="stat-block">
+          <div class="stat-number">6x</div>
+          <div class="stat-label">Mayor tasa de cierre en leads que descargaron contenido técnico previo</div>
+          <div class="stat-desc">Un CISO que ha usado tu checklist llega a la llamada con el problema validado y la confianza construida. El ciclo de venta se acorta.</div>
+        </div>
+        <div class="stat-block">
+          <div class="stat-number">1</div>
+          <div class="stat-label">Engagement adicional al mes recupera la inversión completa</div>
+          <div class="stat-desc">A €25.000 de ticket promedio, un solo contrato adicional generado por el funnel justifica toda la inversión en infraestructura.</div>
+        </div>
+      </div>
+      <p class="stats-closing">Un solo engagement recuperado al mes cubre la inversión entera en el sistema. El resto es margen puro.</p>
+    </div>
+  </section>
+
+  <!-- CARD 13: LEAD MAGNETS -->
+  <section class="section white">
+    <div class="container">
+      <p class="label">Lead Magnets Sugeridos</p>
+      <h2>Cinco Ideas para Atalanta</h2>
+      <p style="color:var(--body-text);margin-top:12px;margin-bottom:8px;">Cinco ideas basadas en lo que Atalanta ya tiene o puede crear fácilmente:</p>
+      <div class="lm-list">
+        <div class="lm-item featured">
+          <div class="lm-num">1</div>
+          <div>
+            <span class="lm-badge">Recomendado</span>
+            <h4>"Checklist de Auditoría para CISOs: Los 12 Controles Críticos que Debes Revisar Antes de tu Próxima Evaluación ISO/ENS/DORA/NIS2"</h4>
+            <p>Un checklist descargable dirigido a CISOs y responsables de seguridad con una evaluación de cumplimiento próxima. Conecta directamente con los servicios de compliance de Atalanta, crea urgencia regulatoria real, y es exactamente lo que ese perfil busca antes de contratar una auditoría. Este es el lead magnet sobre el que está construida la página de ejemplo de más abajo.</p>
+          </div>
+        </div>
+        <div class="lm-item">
+          <div class="lm-num">2</div>
+          <div>
+            <h4>"El Informe de Madurez en Ciberseguridad para Empresas con Infraestructura Crítica"</h4>
+            <p>Documento de autoevaluación de 5-10 páginas posicionado como benchmarking sectorial. Ideal para CTOs y CISOs que necesitan justificar internamente una inversión en seguridad ante su comité de dirección.</p>
+          </div>
+        </div>
+        <div class="lm-item">
+          <div class="lm-num">3</div>
+          <div>
+            <h4>"Guía de Cumplimiento DORA para Entidades Financieras: Lo que Tienes que Tener Listo"</h4>
+            <p>Recurso específico para el segmento financiero, uno de los objetivos declarados de Atalanta. Alta intención de compra con regulación con fecha límite real que crea urgencia.</p>
+          </div>
+        </div>
+        <div class="lm-item">
+          <div class="lm-num">4</div>
+          <div>
+            <h4>"Los 5 Vectores de Ataque más Usados en Red Team contra Infraestructuras OT/IoT en Europa"</h4>
+            <p>Contenido técnico avanzado que filtra perfiles con alta madurez de seguridad. Posiciona a Atalanta como referente técnico ante el segmento industrial y de infraestructura crítica.</p>
+          </div>
+        </div>
+        <div class="lm-item">
+          <div class="lm-num">5</div>
+          <div>
+            <h4>"Plantilla de BCP/DRP: El Plan de Continuidad de Negocio que Todo Responsable de Seguridad Debería Tener Documentado"</h4>
+            <p>Plantilla editable dirigida a responsables que saben que necesitan un Business Continuity Plan pero no han llegado a documentarlo formalmente.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARD 14: EXAMPLE PAGE -->
+  <section class="section off-white">
+    <div class="container">
+      <p class="label">La Página de Ejemplo</p>
+      <h2>No Solo Encontramos el Problema</h2>
+      <p style="color:var(--body-text);margin-top:12px;margin-bottom:8px;font-size:18px;font-weight:600;">También construimos la solución.</p>
+      <p style="color:var(--body-text);margin-bottom:4px;">Aquí está una versión reconstruida de la experiencia de captación de Atalanta como página dedicada para el Lead Magnet 1: el Checklist de Auditoría para CISOs.</p>
+
+      <a href="https://danigdecelis.github.io/atalanta-funnel/" target="_blank" class="preview-wrap">
+        <div class="preview-hero">
+          <div class="preview-badge">Recurso gratuito para CISOs y responsables de seguridad</div>
+          <div class="preview-headline">El Checklist que Los CISOs Usan para No Fallar en su Próxima <span>Auditoría Regulatoria</span></div>
+          <div class="preview-stats">
+            <div class="preview-stat">
+              <div class="preview-stat-num">+70</div>
+              <div class="preview-stat-label">Organizaciones</div>
+            </div>
+            <div class="preview-stat">
+              <div class="preview-stat-num">+50</div>
+              <div class="preview-stat-label">Expertos</div>
+            </div>
+            <div class="preview-stat">
+              <div class="preview-stat-num">Top 10</div>
+              <div class="preview-stat-label">HackTheBox Global</div>
+            </div>
+          </div>
+        </div>
+        <div class="preview-bar">
+          <span class="preview-url">danigdecelis.github.io/atalanta-funnel/</span>
+          <span class="preview-cta">Ver Página en Vivo &#8594;</span>
+        </div>
+      </a>
+
+      <div style="margin-top:28px;">
+        <p style="font-weight:600;color:var(--dark-mid);margin-bottom:16px;">Qué cambió:</p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+          <div style="display:flex;gap:10px;align-items:center;font-size:14px;color:var(--body-text);">
+            <span style="color:var(--gold);font-weight:700;">✓</span> Mismo branding Atalanta
+          </div>
+          <div style="display:flex;gap:10px;align-items:center;font-size:14px;color:var(--body-text);">
+            <span style="color:var(--gold);font-weight:700;">✓</span> Misma propuesta de valor
+          </div>
+          <div style="display:flex;gap:10px;align-items:center;font-size:14px;color:var(--body-text);">
+            <span style="color:var(--gold);font-weight:700;">✓</span> Framing del beneficio actualizado
+          </div>
+          <div style="display:flex;gap:10px;align-items:center;font-size:14px;color:var(--body-text);">
+            <span style="color:var(--gold);font-weight:700;">✓</span> Email gate claro
+          </div>
+          <div style="display:flex;gap:10px;align-items:center;font-size:14px;color:var(--body-text);grid-column:span 2;">
+            <span style="color:var(--gold);font-weight:700;">✓</span> CTA que convierte visitas en leads cualificados
+          </div>
+        </div>
+        <br>
+        <p style="font-size:14px;color:var(--muted);">En lugar de: Tráfico al blog sin posibilidad de conversión</p>
+        <p style="font-size:14px;color:var(--dark-mid);font-weight:600;margin-top:8px;">Creamos: Tráfico al Checklist para CISOs &rarr; Captura de Email &rarr; Secuencia de Nurture &rarr; Llamada de Diagnóstico</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARD 15: WHAT ELSE -->
+  <section class="section white">
+    <div class="container">
+      <p class="label">Qué Más Construiríamos</p>
+      <h2>El Sistema Completo</h2>
+      <br>
+      <div class="build-grid">
+        <div class="build-col">
+          <h3>Secuencia de Email Nurture para CISOs</h3>
+          <p style="font-size:13px;color:var(--muted);margin-bottom:12px;">6 emails en 60 días</p>
+          <div class="email-list">
+            <div class="email-item"><div class="email-num">1</div><span>Entrega del checklist. Contexto sobre por qué estos 12 controles son los más críticos en evaluaciones regulatorias actuales.</span></div>
+            <div class="email-item"><div class="email-num">2</div><span>Qué diferencia un Red Team real de un pentest superficial. Posiciona la metodología de Atalanta.</span></div>
+            <div class="email-item"><div class="email-num">3</div><span>Caso de uso: empresa del sector financiero o energético resolvió un gap de compliance con Atalanta.</span></div>
+            <div class="email-item"><div class="email-num">4</div><span>Objeción principal: "Ya tenemos proveedor." Cómo responder con datos sobre el valor de una segunda opinión técnica.</span></div>
+            <div class="email-item"><div class="email-num">5</div><span>CTA suave: "¿Listo para un diagnóstico de 30 minutos sin compromiso? Así funciona."</span></div>
+            <div class="email-item"><div class="email-num">6</div><span>Seguimiento final antes de la próxima evaluación regulatoria. Lo que otras organizaciones en tu situación han hecho.</span></div>
+          </div>
+        </div>
+        <div class="build-col">
+          <h3>Configuración de Pixels y Analytics</h3>
+          <ul>
+            <li>LinkedIn Insight Tag para audiencias de remarketing con CISOs y CTOs que visitan atalantago.com</li>
+            <li>GA4 con eventos de conversión: descargas, formularios, tiempo en páginas de servicios</li>
+            <li>Microsoft Clarity para mapas de calor y grabaciones de sesión en páginas clave</li>
+            <li>Base de datos de comportamiento desde el primer día para optimizar cualquier campaña futura</li>
+          </ul>
+        </div>
+        <div class="build-col">
+          <h3>Sistema de Contenido LinkedIn para Eduardo y Atalanta</h3>
+          <ul>
+            <li>3 formatos de post semanales: análisis técnico, dato regulatorio, caso de uso</li>
+            <li>Calendario de 30 días listo para publicar</li>
+            <li>Templates adaptados a la voz de Eduardo y al posicionamiento de Atalanta</li>
+            <li>Objetivo: convertir la actividad de LinkedIn en tráfico cualificado hacia el lead magnet</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARD 16: GUARANTEE -->
+  <section class="section off-white">
+    <div class="container">
+      <p class="label">Nuestra Propuesta y Garantía</p>
+      <h2>Cómo Funciona</h2>
+      <br>
+      <div class="guarantee-box">
+        <p>Sistema completo funcionando en 30 dias y generando leads cualificados en 60. Si no lo conseguimos, seguimos trabajando sin coste hasta que lo hagamos.</p>
+      </div>
+      <div class="guarantee-steps">
+        <div class="g-step theirs">
+          <div class="g-num">1</div>
+          <div class="g-content">
+            <h4>Los Dos: Llamada de Kickoff</h4>
+            <p>Planificamos el funnel completo juntos. Arrancamos en 7 a 10 días hábiles desde la primera llamada.</p>
+          </div>
+        </div>
+        <div class="g-step">
+          <div class="g-num">2</div>
+          <div class="g-content">
+            <h4>Vosotros: Nos Dais Acceso</h4>
+            <p>Backend de la web, plataforma de email si existe, y assets de marca.</p>
+          </div>
+        </div>
+        <div class="g-step theirs">
+          <div class="g-num">3</div>
+          <div class="g-content">
+            <h4>Nosotros: La Página de Captación del Checklist</h4>
+            <p>Ya construida. Live en danigdecelis.github.io/atalanta-funnel/</p>
+          </div>
+        </div>
+        <div class="g-step">
+          <div class="g-num">4</div>
+          <div class="g-content">
+            <h4>Nosotros: Secuencia de Nurture Cargada</h4>
+            <p>6 emails escritos y cargados en vuestra plataforma de email.</p>
+          </div>
+        </div>
+        <div class="g-step theirs">
+          <div class="g-num">5</div>
+          <div class="g-content">
+            <h4>Nosotros: Pixels y Analytics Instalados</h4>
+            <p>LinkedIn Insight Tag, GA4 y Microsoft Clarity configurados y funcionando desde el primer día.</p>
+          </div>
+        </div>
+        <div class="g-step">
+          <div class="g-num">6</div>
+          <div class="g-content">
+            <h4>Nosotros: Sistema de Contenido LinkedIn</h4>
+            <p>Templates, calendario de 30 días y estructura de publicación listos para activar.</p>
+          </div>
+        </div>
+        <div class="g-step theirs">
+          <div class="g-num">7</div>
+          <div class="g-content">
+            <h4>Nosotros: Lo Entregamos Todo Listo para Lanzar</h4>
+            <p>Cero trabajo extra de vuestra parte.</p>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top:32px;" class="guarantee-box">
+        <p>Sistema completo funcionando en 30 dias y generando leads cualificados en 60. Si no lo conseguimos, seguimos trabajando sin coste hasta que lo hagamos.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARD 17: CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <p class="label" style="text-align:center;">Próximos Pasos</p>
+      <h2>¿Listos para Avanzar?</h2>
+      <p>Responde directamente o reserva una llamada de 30 minutos. La página de ejemplo ya está construida y es vuestra independientemente de lo que decidáis.</p>
+      <p class="cta-email">📧 Responde a este mensaje directamente</p>
+      <div class="cta-or">o</div>
+      <button class="btn-calendly" onclick="Calendly.initPopupWidget({url:'https://calendly.com/danigdecelis/meeting'});return false;">📅 Reservar Llamada de 30 Minutos</button>
+    </div>
+  </section>
+
+  <!-- CARD 18: FAQS -->
+  <section class="section white">
+    <div class="container">
+      <p class="label">Preguntas Frecuentes</p>
+      <h2>FAQs</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <h4>¿Esto es hecho para vosotros?</h4>
+          <p>Sí. Nos encargamos de todo desde la construcción hasta el lanzamiento. Vosotros revisáis, aprobáis y salimos en vivo.</p>
+        </div>
+        <div class="faq-item">
+          <h4>¿Qué incluye el engagement completo?</h4>
+          <p>La página de captación del checklist para CISOs (ya construida), la secuencia de 6 emails de nurture, la instalación de pixels y analytics (LinkedIn Insight Tag, GA4, Microsoft Clarity) y el sistema de contenido LinkedIn con calendario y templates de 30 días.</p>
+        </div>
+        <div class="faq-item">
+          <h4>¿Cuánto tiempo tarda en arrancar?</h4>
+          <p>Kickoff en 7 a 10 días hábiles desde nuestra primera llamada.</p>
+        </div>
+        <div class="faq-item">
+          <h4>¿Qué necesitáis de nosotros?</h4>
+          <p>Acceso al backend de la web, plataforma de email si la tenéis, y assets de marca. Nada más.</p>
+        </div>
+        <div class="faq-item">
+          <h4>¿Cuánto cuesta?</h4>
+          <p>Lo hablamos en la llamada. La página de ejemplo ya está construida y es vuestra independientemente de lo que decidáis.</p>
+        </div>
+        <div class="faq-item">
+          <h4>¿Cuál es la garantía?</h4>
+          <p>Sistema completo funcionando en 30 dias y generando leads cualificados en 60. Si no lo conseguimos, seguimos trabajando sin coste hasta que lo hagamos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARD 19: ABOUT -->
+  <section class="section off-white">
+    <div class="container">
+      <p class="label">Sobre Daniel</p>
+      <div class="about-card">
+        <img src="https://danigdecelis.github.io/factor-rh-strategy/daniel-photo.png" alt="Daniel Garcia de Celis" class="about-photo">
+        <div>
+          <div class="about-name">Daniel Garcia de Celis</div>
+          <div class="about-title">Fundador, Copy Estratega</div>
+          <p class="about-bio">Copy Estratega trabaja con consultoras y expertos que ya tienen la metodología, los resultados y la autoridad, pero todavía no tienen el sistema digital que convierte eso en clientes nuevos de forma predecible.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARD 20: FINAL CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <p class="label" style="text-align:center;">Vamos a por Ello</p>
+      <h2>¿Empezamos?</h2>
+      <p>La página de captación para Atalanta ya está construida y live. El siguiente paso es tuyo.</p>
+      <p class="cta-email">📧 Responde a este mensaje directamente</p>
+      <div class="cta-or">o</div>
+      <button class="btn-calendly" onclick="Calendly.initPopupWidget({url:'https://calendly.com/danigdecelis/meeting'});return false;">📅 Reservar Llamada de 30 Minutos</button>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <img src="https://danigdecelis.github.io/factor-rh-strategy/logo-ca.png" alt="Copy Estratega">
+    <p>2026 Copy Estratega. Todos los derechos reservados.</p>
+  </footer>
+
+  <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+</body>
+</html>
